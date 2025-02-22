@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="../images/simple-icons--minds.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/tic.css" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/global.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="flex">
+      <div class="logo">
+        <span>HOG</span>
+      </div>
+      <div class="links">
+        <a class="sign-in" href="./singin.html">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          Sign in
+        </a>
+        <a class="hompepage" href="/Index.html">
+          <i class="fa-solid fa-house"></i>
+          Home Page
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="counter">X Wins: 0 | O Wins: 0</div>
+      <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+      <button class="back-button" onclick="goToHomePage()">Back to Home</button>
+    </main>
+
+    <!-- Modal for Win/Lose/Draw Message -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2 id="modal-message"></h2>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      Designed and developed by
+      <span> Ibrahim Ahmed AddElazim </span>
+      &copy; 2025.
+    </footer>
+
+    <script src="../js/Tic_tac_toc.Js">
+
+    </script>
+  </body>
+</html>

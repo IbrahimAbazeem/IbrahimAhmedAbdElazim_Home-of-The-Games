@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze Runner</title>
+    <link rel="shortcut icon" href="../images/simple-icons--maze.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/maze.css" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/global.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="flex">
+      <div class="logo">
+        <span>HOG</span>
+      </div>
+      <div class="links">
+        <a class="sign-in" href="./singin.html">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          Sign in
+        </a>
+        <a class="hompepage" href="/Index.html">
+          <i class="fa-solid fa-house"></i>
+          Home Page
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="counter">Wins: 0</div>
+      <div class="timer">Time: 0s</div>
+      <select id="level">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <div class="maze"></div>
+      <button class="back-button" onclick="goToHomePage()">Back to Home</button>
+    </main>
+
+    <!-- Modal for Win/Lose Message -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2 id="modal-message"></h2>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="position:sticky; bottom: 0; width: 100%;">
+      Designed and developed by
+      <span> Ibrahim Ahmed AddElazim </span>
+      &copy; 2025.
+    </footer>
+
+    <script src="../js/maze.js"> </script>
+  </body>
+</html>

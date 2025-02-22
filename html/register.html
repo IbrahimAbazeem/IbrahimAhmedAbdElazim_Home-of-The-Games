@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="shortcut icon" href="./images/simple-icons--amazongames.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/css/register.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="flex">
+    <div class="logo">
+          <span>HOG</span>
+    </div>
+    <div class="links">
+      <a class="sign-in" href="./singin.html">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        Sign in
+      </a>
+      <a class="hompepage" href="/Index.html">
+        <i class="fa-solid fa-house"></i>
+        Home Page
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <form class="flex">
+      <input type="hidden" name="userID" value="1">
+
+      <div style="flex: 1 1 45%;">
+        <label for="firstName" accesskey="F">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required tabindex="1">
+      </div>
+
+      <div style="flex: 1 1 45%;">
+        <label for="lastName" accesskey="L">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required tabindex="2">
+      </div>
+
+      <div style="flex: 1 1 45%;">
+        <label for="email" accesskey="E">Email:</label>
+        <input type="email" id="email" name="email" required tabindex="3">
+      </div>
+
+      <div style="flex: 1 1 45%;">
+        <label for="password" accesskey="P">Password:</label>
+        <input type="password" id="password" name="password" required tabindex="4">
+      </div>
+
+      <div style="flex: 1 1 45%;">
+        <label for="repeatPassword" accesskey="R">Repeat Password:</label>
+        <input type="password" id="repeatPassword" name="repeatPassword" required tabindex="5">
+      </div>
+
+      <div style="flex: 1 1 45%;">
+        <label for="birthDate" accesskey="B">Birth Date:</label>
+        <input type="date" id="birthDate" name="birthDate" required tabindex="6">
+      </div>
+
+      <div style="flex: 1 1 45%;">
+        <label for="userPicture" accesskey="U">User Picture:</label>
+        <input type="file" id="userPicture" name="userPicture" accept="image/*" tabindex="7">
+      </div>
+
+      <fieldset style="flex: 1 1 100%;">
+        <legend>Gender</legend>
+        <input type="radio" id="male" name="gender" value="Male" tabindex="8">
+        <label for="male" accesskey="M">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female" tabindex="9">
+        <label for="female" accesskey="F">Female</label>
+      </fieldset>
+
+      <div style="flex: 1 1 100%;">
+        <label for="aboutYou" accesskey="A">About You:</label>
+        <textarea id="aboutYou" name="aboutYou" rows="4" cols="50" tabindex="14"></textarea>
+      </div>
+
+      <div style="flex: 1 1 100%;">
+        <input type="checkbox" id="terms" name="terms" required tabindex="15">
+        <label for="terms" accesskey="T">I agree to the <a href="terms.html" target="_blank">terms and conditions</a>.</label>
+      </div>
+
+      <div style="flex: 1 1 100%; text-align: center;">
+        <input type="submit" value="Submit" tabindex="16">
+        <input type="reset" value="Reset" tabindex="17">
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Designed and developed by <span>Ibrahim Ahmed AddElazim</span> &copy; 2025.
+  </footer>
+
+</body>
+</html>

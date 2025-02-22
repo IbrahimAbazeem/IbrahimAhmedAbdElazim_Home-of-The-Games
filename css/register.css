@@ -1,0 +1,206 @@
+/* CSS Variables */
+:root {
+  --bodyFont: #333;
+  --blue: #007bff;
+  --footer-bg: #333;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: var(--bodyFont);
+}
+
+/* Header */
+header.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10%;
+  padding-top: 1.2rem;
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo i {
+  font-size: 5rem;
+  color: var(--bodyFont);
+}
+
+header .logo span {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+header .logo p {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+header .cart,
+header .sign-in,
+header .hompepage {
+  margin-inline: 1rem;
+  text-decoration: none;
+  color: var(--bodyFont);
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--bodyFont);
+  padding: 0.44rem 1rem;
+  border-radius: 55px;
+}
+
+header .cart {
+  background-color: var(--bodyFont);
+  color: var(--blue);
+  font-size: 0.9rem;
+  padding: 0.44rem 1.1rem 0.44rem 0.6rem;
+}
+
+header .cart .fa-solid {
+  color: var(--blue);
+}
+
+header .sign-in:hover,
+header .hompepage:hover {
+  background-color: var(--bodyFont);
+  color: var(--blue);
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+form.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; 
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  background-color: #f8f9fa;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 1rem; 
+  margin-bottom: 1rem; 
+  margin-right: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+form fieldset {
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  padding: 1.5rem; 
+  width: 100%;
+  margin-bottom: 1.5rem; 
+}
+
+
+
+
+form fieldset legend {
+  font-weight: bold;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 1rem; 
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: var(--footer-bg);
+  border-left: rgb(205, 205, 11) solid 0.5rem;
+  border-right: rgb(205, 205, 11) solid 0.5rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-block: 1rem;
+  color: white;
+  font-size: 17px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer span {
+  color: #ff7790;
+  text-transform: capitalize;
+}
+
+/* Responsive Design */
+@media (width < 600px) {
+  header.flex {
+    justify-content: center;
+    padding-inline: 0;
+  }
+
+  header .logo {
+    display: none;
+  }
+
+  header .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  form.flex {
+    padding: 1rem;
+    gap: 2rem; 
+  }
+
+  form input[type="submit"],
+  form input[type="reset"] {
+    width: 100%;
+    margin-bottom: 0.5rem; 
+  }
+}
